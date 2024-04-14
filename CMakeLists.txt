@@ -15,9 +15,11 @@ set(PROJECT_H)
 
 list(APPEND PROJECT_SRC
 	src/GameLoader.cpp
+	src/GameInitializer.cpp
 	)
 list(APPEND PROJECT_H
 	src/GameLoader.hpp
+	src/GameInitializer.hpp
 	)
 set(ALL_PROJECT_FILES ${PROJECT_SRC} ${PROJECT_H})
 

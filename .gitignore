@@ -35,7 +35,7 @@
 .cache/
 
 # build
-.build/
+build/
 
 # dev
 compile_commands.json
