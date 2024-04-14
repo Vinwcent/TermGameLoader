@@ -1,104 +1,20 @@
 [
 {
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -I/usr/local/include -I/Applications/Workspace/Projects/Github/C++/VoxelProject -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/GameLib.dir/src/engine/App.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/App.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/App.cpp",
-  "output": "CMakeFiles/GameLib.dir/src/engine/App.cpp.o"
+  "directory": "/Applications/Workspace/Projects/Github/C++/TermGameLoader/build",
+  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/TermGameLoader/include -I/Applications/Workspace/Projects/Github/C++/TermGameLoader -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/ProjectLib.dir/src/GameLoader.cpp.o -c /Applications/Workspace/Projects/Github/C++/TermGameLoader/src/GameLoader.cpp",
+  "file": "/Applications/Workspace/Projects/Github/C++/TermGameLoader/src/GameLoader.cpp",
+  "output": "CMakeFiles/ProjectLib.dir/src/GameLoader.cpp.o"
 },
 {
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -I/usr/local/include -I/Applications/Workspace/Projects/Github/C++/VoxelProject -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/GameLib.dir/src/engine/render/Window.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/Window.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/Window.cpp",
-  "output": "CMakeFiles/GameLib.dir/src/engine/render/Window.cpp.o"
+  "directory": "/Applications/Workspace/Projects/Github/C++/TermGameLoader/build",
+  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/TermGameLoader/include -I/Applications/Workspace/Projects/Github/C++/TermGameLoader -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/run_project.dir/src/main.cpp.o -c /Applications/Workspace/Projects/Github/C++/TermGameLoader/src/main.cpp",
+  "file": "/Applications/Workspace/Projects/Github/C++/TermGameLoader/src/main.cpp",
+  "output": "CMakeFiles/run_project.dir/src/main.cpp.o"
 },
 {
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -I/usr/local/include -I/Applications/Workspace/Projects/Github/C++/VoxelProject -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/GameLib.dir/src/engine/render/PipelineConfigInfo.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/PipelineConfigInfo.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/PipelineConfigInfo.cpp",
-  "output": "CMakeFiles/GameLib.dir/src/engine/render/PipelineConfigInfo.cpp.o"
-},
-{
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -I/usr/local/include -I/Applications/Workspace/Projects/Github/C++/VoxelProject -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/GameLib.dir/src/engine/render/Pipeline.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/Pipeline.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/Pipeline.cpp",
-  "output": "CMakeFiles/GameLib.dir/src/engine/render/Pipeline.cpp.o"
-},
-{
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -I/usr/local/include -I/Applications/Workspace/Projects/Github/C++/VoxelProject -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/GameLib.dir/src/engine/render/Device.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/Device.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/Device.cpp",
-  "output": "CMakeFiles/GameLib.dir/src/engine/render/Device.cpp.o"
-},
-{
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -I/usr/local/include -I/Applications/Workspace/Projects/Github/C++/VoxelProject -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/GameLib.dir/src/engine/render/InstanceWrapper.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/InstanceWrapper.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/InstanceWrapper.cpp",
-  "output": "CMakeFiles/GameLib.dir/src/engine/render/InstanceWrapper.cpp.o"
-},
-{
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -I/usr/local/include -I/Applications/Workspace/Projects/Github/C++/VoxelProject -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/GameLib.dir/src/engine/render/Swapchain.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/Swapchain.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/Swapchain.cpp",
-  "output": "CMakeFiles/GameLib.dir/src/engine/render/Swapchain.cpp.o"
-},
-{
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -I/usr/local/include -I/Applications/Workspace/Projects/Github/C++/VoxelProject -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/GameLib.dir/src/engine/render/Model.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/Model.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/Model.cpp",
-  "output": "CMakeFiles/GameLib.dir/src/engine/render/Model.cpp.o"
-},
-{
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -I/usr/local/include -I/Applications/Workspace/Projects/Github/C++/VoxelProject -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/GameLib.dir/src/engine/render/RenderDirector.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/RenderDirector.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/RenderDirector.cpp",
-  "output": "CMakeFiles/GameLib.dir/src/engine/render/RenderDirector.cpp.o"
-},
-{
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -I/usr/local/include -I/Applications/Workspace/Projects/Github/C++/VoxelProject -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/GameLib.dir/src/engine/render/ShaderPipelineManager.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/ShaderPipelineManager.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/ShaderPipelineManager.cpp",
-  "output": "CMakeFiles/GameLib.dir/src/engine/render/ShaderPipelineManager.cpp.o"
-},
-{
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -I/usr/local/include -I/Applications/Workspace/Projects/Github/C++/VoxelProject -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/GameLib.dir/src/engine/render/GameObject.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/GameObject.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/GameObject.cpp",
-  "output": "CMakeFiles/GameLib.dir/src/engine/render/GameObject.cpp.o"
-},
-{
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -I/usr/local/include -I/Applications/Workspace/Projects/Github/C++/VoxelProject -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/GameLib.dir/src/engine/render/Renderer.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/Renderer.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/Renderer.cpp",
-  "output": "CMakeFiles/GameLib.dir/src/engine/render/Renderer.cpp.o"
-},
-{
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -I/usr/local/include -I/Applications/Workspace/Projects/Github/C++/VoxelProject -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/GameLib.dir/src/engine/render/Camera.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/Camera.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/Camera.cpp",
-  "output": "CMakeFiles/GameLib.dir/src/engine/render/Camera.cpp.o"
-},
-{
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -I/usr/local/include -I/Applications/Workspace/Projects/Github/C++/VoxelProject -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/GameLib.dir/src/engine/render/RenderSystem.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/RenderSystem.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/render/RenderSystem.cpp",
-  "output": "CMakeFiles/GameLib.dir/src/engine/render/RenderSystem.cpp.o"
-},
-{
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -I/usr/local/include -I/Applications/Workspace/Projects/Github/C++/VoxelProject -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/GameLib.dir/src/engine/utilities/FileUtility.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/utilities/FileUtility.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/src/engine/utilities/FileUtility.cpp",
-  "output": "CMakeFiles/GameLib.dir/src/engine/utilities/FileUtility.cpp.o"
-},
-{
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -I/usr/local/include -I/Applications/Workspace/Projects/Github/C++/VoxelProject -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/game.dir/src/main.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/src/main.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/src/main.cpp",
-  "output": "CMakeFiles/game.dir/src/main.cpp.o"
-},
-{
-  "directory": "/Applications/Workspace/Projects/Github/C++/VoxelProject/build",
-  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/VoxelProject -I/Applications/Workspace/Projects/Github/C++/VoxelProject/include -isystem /usr/local/include -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/launchTest.dir/tests/test.cpp.o -c /Applications/Workspace/Projects/Github/C++/VoxelProject/tests/test.cpp",
-  "file": "/Applications/Workspace/Projects/Github/C++/VoxelProject/tests/test.cpp",
-  "output": "CMakeFiles/launchTest.dir/tests/test.cpp.o"
+  "directory": "/Applications/Workspace/Projects/Github/C++/TermGameLoader/build",
+  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/TermGameLoader -I/Applications/Workspace/Projects/Github/C++/TermGameLoader/include -isystem /usr/local/include -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/run_test.dir/tests/test.cpp.o -c /Applications/Workspace/Projects/Github/C++/TermGameLoader/tests/test.cpp",
+  "file": "/Applications/Workspace/Projects/Github/C++/TermGameLoader/tests/test.cpp",
+  "output": "CMakeFiles/run_test.dir/tests/test.cpp.o"
 }
 ]
