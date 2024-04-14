@@ -1,0 +1,6 @@
+/Applications/Workspace/Projects/Github/C++/TermGameLoader/build/CMakeFiles/ProjectLib.dir
+/Applications/Workspace/Projects/Github/C++/TermGameLoader/build/CMakeFiles/run_project.dir
+/Applications/Workspace/Projects/Github/C++/TermGameLoader/build/CMakeFiles/run_test.dir
+/Applications/Workspace/Projects/Github/C++/TermGameLoader/build/CMakeFiles/test.dir
+/Applications/Workspace/Projects/Github/C++/TermGameLoader/build/CMakeFiles/edit_cache.dir
+/Applications/Workspace/Projects/Github/C++/TermGameLoader/build/CMakeFiles/rebuild_cache.dir

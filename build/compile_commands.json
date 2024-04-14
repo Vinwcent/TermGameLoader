@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Applications/Workspace/Projects/Github/C++/TermGameLoader/build",
+  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/TermGameLoader/include -I/Applications/Workspace/Projects/Github/C++/TermGameLoader -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/ProjectLib.dir/src/GameLoader.cpp.o -c /Applications/Workspace/Projects/Github/C++/TermGameLoader/src/GameLoader.cpp",
+  "file": "/Applications/Workspace/Projects/Github/C++/TermGameLoader/src/GameLoader.cpp",
+  "output": "CMakeFiles/ProjectLib.dir/src/GameLoader.cpp.o"
+},
+{
+  "directory": "/Applications/Workspace/Projects/Github/C++/TermGameLoader/build",
+  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/TermGameLoader/include -I/Applications/Workspace/Projects/Github/C++/TermGameLoader -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/run_project.dir/src/main.cpp.o -c /Applications/Workspace/Projects/Github/C++/TermGameLoader/src/main.cpp",
+  "file": "/Applications/Workspace/Projects/Github/C++/TermGameLoader/src/main.cpp",
+  "output": "CMakeFiles/run_project.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Applications/Workspace/Projects/Github/C++/TermGameLoader/build",
+  "command": "/Applications/Workspace/Coding/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Applications/Workspace/Projects/Github/C++/TermGameLoader -I/Applications/Workspace/Projects/Github/C++/TermGameLoader/include -isystem /usr/local/include -g -std=gnu++20 -arch arm64 -isysroot /Applications/Workspace/Coding/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/run_test.dir/tests/test.cpp.o -c /Applications/Workspace/Projects/Github/C++/TermGameLoader/tests/test.cpp",
+  "file": "/Applications/Workspace/Projects/Github/C++/TermGameLoader/tests/test.cpp",
+  "output": "CMakeFiles/run_test.dir/tests/test.cpp.o"
+}
+]
