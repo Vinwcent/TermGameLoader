@@ -2,7 +2,6 @@
 
 #include <thread>
 
-
 class GameLoader {
 public:
   GameLoader(

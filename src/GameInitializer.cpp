@@ -2,26 +2,19 @@
 #include <thread>
 
 #include "GameInitializer.hpp"
+#include "src/games/HelicopterGame.hpp"
 
 namespace engine {
 
 void GameInitializer::runGame(std::atomic<bool> &running) {
   initWindow_();
 
+  games::HelicopterGame game(window_);
+
   int position = 0;
   while (running) {
-    wclear(window_);
-    mvwprintw(window_, position, 0, "\uEE00");
-    wrefresh(window_);
-
     int ch = getch();
-    if (ch != ERR) {
-      position-=10;
-    } else {
-      position+=2;
-    }
-
-    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    game.update(ch);
   }
 
   closeWindow_();
@@ -32,9 +25,8 @@ void GameInitializer::initWindow_() {
   initscr();
   cbreak();
   noecho();
-  keypad(stdscr, true);
   nodelay(stdscr, true);
-  timeout(0);
+  timeout(100);
 
   int termHeight, termWidth;
   getmaxyx(stdscr, termHeight, termWidth);
