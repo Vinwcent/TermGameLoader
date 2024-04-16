@@ -15,9 +15,18 @@ set(PROJECT_H)
 
 list(APPEND PROJECT_SRC
 	src/GameLoader.cpp
+	src/GameInitializer.cpp
+	src/TerminalGame.cpp
+	src/games/HelicopterGame.cpp
+	src/games/helicopter/GameObject.cpp
 	)
 list(APPEND PROJECT_H
 	src/GameLoader.hpp
+	src/GameInitializer.hpp
+	src/TerminalGame.hpp
+	src/games/HelicopterGame.hpp
+	src/games/helicopter/GameObject.hpp
+	src/games/helicopter/utils.hpp
 	)
 set(ALL_PROJECT_FILES ${PROJECT_SRC} ${PROJECT_H})
 
