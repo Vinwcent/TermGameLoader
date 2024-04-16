@@ -34,16 +34,17 @@ void GameLoader::start() {
 
 void GameLoader::end() {
   running_ = false;
-  if (loadingThread_.joinable()) {
-    loadingThread_.join();
-  }
+  stopSpinner_.store(true);
+  loadingThread_.join();
+  std::cout << "\n  ->Done !\n";
 }
 
 void GameLoader::loading_() {
-  std::atomic<bool> stopSpinner(false);
+  stopSpinner_ = false;
 
   // Thread to take inputs while spinning
-  std::thread inputThread([&stopSpinner, this]() { takeInputs_(stopSpinner); });
+  std::thread inputThread([this]() { takeInputs_(stopSpinner_); });
+
 
   // Setup terminal
   struct termios old_tio;
@@ -51,7 +52,7 @@ void GameLoader::loading_() {
 
   // Spin while key has not been pressed
   int spinIndex = 0;
-  while (!stopSpinner.load()) {
+  while (!stopSpinner_.load()) {
     spinIndex = (spinIndex + 1) % spinner_.size();
     std::cout << "\r" << loadingString_ << " " << spinner_[spinIndex] << std::flush;
     std::this_thread::sleep_for(std::chrono::milliseconds(100));
@@ -61,18 +62,39 @@ void GameLoader::loading_() {
   inputThread.join();
   restoreTerminal(old_tio);
 
-  engine::GameInitializer initializer;
-  initializer.runGame(running_);
-
+  if (running_) {
+    initializer_.runGame(running_);
+  }
 }
 
-void GameLoader::takeInputs_(std::atomic<bool> &stopInput) {
-  char c;
-  while (!stopInput.load()) {
-    // Lire l'entrée utilisateur
-    if (std::cin >> c && c == gameKey_) {
-      stopInput.store(true); // Arrêter l'entrée utilisateur
-      break;
+void GameLoader::takeInputs_(std::atomic<bool>& stopInput) {
+    char c;
+    while (!stopInput.load()) {
+        fd_set set;
+        struct timeval timeout;
+
+        FD_ZERO(&set);          // Clear the set
+        FD_SET(STDIN_FILENO, &set);  // Add our file descriptor to the set
+
+        timeout.tv_sec = 0;     // Set a timeout
+        timeout.tv_usec = 100000;  // 100 ms
+
+        int result = select(STDIN_FILENO + 1, &set, NULL, NULL, &timeout);
+        if (result == -1) {
+            // Error
+            break;
+        } else if (result == 0) {
+            // Timeout, no data
+        } else {
+            if (FD_ISSET(STDIN_FILENO, &set)) {
+                std::cin >> c;
+                if (c == gameKey_) {
+                    stopInput.store(true);
+                    break;
+                }
+            }
+        }
+
+        if (stopInput.load()) break;
     }
-  }
 }

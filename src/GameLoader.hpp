@@ -2,6 +2,8 @@
 
 #include <thread>
 
+#include "src/GameInitializer.hpp"
+
 class GameLoader {
 public:
   GameLoader(
@@ -23,6 +25,8 @@ private:
 
   std::thread loadingThread_;
   std::atomic<bool> running_;
+  std::atomic<bool> stopSpinner_;
+  engine::GameInitializer initializer_;
 
   void loading_();
   void launchBasicSpinner_();

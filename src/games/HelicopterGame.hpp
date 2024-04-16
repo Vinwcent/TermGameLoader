@@ -11,7 +11,7 @@ namespace games {
 
 class HelicopterGame : TerminalGame {
 public:
-  HelicopterGame(WINDOW *window);
+  HelicopterGame(WINDOW *window, std::atomic<bool> &running, std::atomic<bool> &stop);
   void update(char inputChar) override;
 
 private:
@@ -22,6 +22,7 @@ private:
   int termWidth_;
 
   int score_ = 0;
+  int highScore_ = 0;
 
   double prob_ = 0.5;
   int currentSizeBot_ = 10;
@@ -45,6 +46,9 @@ private:
 
   int bernouilliSign(double p);
   void updateScore_();
+  void updateDifficulty_();
+
+  void checkRunning();
 };
 
 

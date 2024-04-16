@@ -8,11 +8,12 @@ namespace engine {
 
 void GameInitializer::runGame(std::atomic<bool> &running) {
   initWindow_();
+  std::atomic<bool> stop = false;
 
-  games::HelicopterGame game(window_);
+  games::HelicopterGame game(window_, running, stop);
 
   int position = 0;
-  while (running) {
+  while (!stop) {
     int ch = getch();
     game.update(ch);
   }

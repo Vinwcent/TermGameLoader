@@ -20,8 +20,15 @@ void Helicopter::printOn(WINDOW *window) {
   mvwprintw(window, position_.y, position_.x, "X");
 
   // Cabin
-  mvwprintw(window, position_.y + 1, position_.x - 5, "\\-------\\");
+  std::string backBlade = getBackBladesChar_();
+  std::string lengthWithBack = backBlade + "-------\\";
+  mvwprintw(window, position_.y + 1, position_.x - 5, lengthWithBack.c_str());
   mvwprintw(window, position_.y + 2, position_.x - 1, "|---/");
+}
+
+std::string Helicopter::getBackBladesChar_() {
+  frame = (frame + 1) % 4;
+  return backBlade_[frame];
 }
 
 Wall::Wall(int size, WallAnchor anchor) : anchor_(anchor), size_(size) {}

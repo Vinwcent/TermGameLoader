@@ -6,17 +6,25 @@
 
 namespace games {
 
-HelicopterGame::HelicopterGame(WINDOW *window) : TerminalGame(window) {
+HelicopterGame::HelicopterGame(WINDOW *window, std::atomic<bool> &running, std::atomic<bool> &stop) : TerminalGame(window, running, stop) {
   initGame_();
 }
 
 void HelicopterGame::update(char inputChar) {
+  if (inputChar == 'q' || stop_) {
+    stop_ = true;
+    return;
+  }
+
+
   updateHelicopterPosition_(inputChar);
   wclear(window_);
   updateWalls_();
   updateObstacles_();
   helicopter_.printOn(window_);
   updateScore_();
+  updateDifficulty_();
+  checkRunning();
   wrefresh(window_);
 }
 
@@ -73,8 +81,11 @@ void HelicopterGame::updateHelicopterPosition_(char inputChar) {
 
 void HelicopterGame::updateWalls_() {
   for (auto &wall : walls_) {
+    helicopter::TilePosition helicopterPosition = helicopter_.getPosition();
 
-    if (wall->isTouching(helicopter_.getPosition())) {
+    if (wall->isTouching(helicopterPosition + helicopter::TilePosition{3, -1}) ||
+        wall->isTouching(helicopterPosition + helicopter::TilePosition{3, 2})
+        ) {
       restartGame_();
       return;
     }
@@ -92,6 +103,23 @@ void HelicopterGame::updateWalls_() {
 
 void HelicopterGame::updateObstacles_() {
   for (auto &obs : obstacles_) {
+    helicopter::TilePosition helicopterPosition = helicopter_.getPosition();
+    if (obs->isTouching(helicopterPosition + helicopter::TilePosition{3, -1}) ||
+        obs->isTouching(helicopterPosition + helicopter::TilePosition{2, -1}) ||
+        obs->isTouching(helicopterPosition + helicopter::TilePosition{1, -1}) ||
+        obs->isTouching(helicopterPosition + helicopter::TilePosition{0, -1}) ||
+        obs->isTouching(helicopterPosition + helicopter::TilePosition{-1, -1}) ||
+        obs->isTouching(helicopterPosition + helicopter::TilePosition{-2, -1}) ||
+        obs->isTouching(helicopterPosition + helicopter::TilePosition{-3, -1}) ||
+        obs->isTouching(helicopterPosition + helicopter::TilePosition{3, 2}) ||
+        obs->isTouching(helicopterPosition + helicopter::TilePosition{2, 2}) ||
+        obs->isTouching(helicopterPosition + helicopter::TilePosition{1, 2}) ||
+        obs->isTouching(helicopterPosition + helicopter::TilePosition{0, 2})
+        ) {
+      restartGame_();
+      return;
+    }
+
     auto newPosition = obs->getPosition() + helicopter::TilePosition{-3, 0};
     if (newPosition.x > 0) {
       obs->setPosition(newPosition);
@@ -166,11 +194,48 @@ int HelicopterGame::bernouilliSign(double p) {
 
 void HelicopterGame::updateScore_() {
   score_ += 1;
-  std::stringstream ss;
-  ss << score_;
-  std::string str = ss.str();
+  if (highScore_ < score_) {
+    highScore_ = score_;
+  }
+
+  std::stringstream ss_high;
+  ss_high << highScore_;
+  std::string str_high = "# HighScore: " + ss_high.str() + " #";
+
+  std::stringstream ss_score;
+  ss_score << score_;
+  std::string str_score = "# Score: " + ss_score.str();
+  for (int i = 0; i < str_high.size() - str_score.size(); ++i) {
+    str_score += " ";
+  }
+  str_score += "  #";
+
+
   auto helicoPosition = helicopter_.getPosition();
-  mvwprintw(window_, helicoPosition.y - 3, helicoPosition.x, str.c_str());
+  std::string scoreLimit = std::string(str_high.size(), '#');
+  mvwprintw(window_, termHeight_ - 4, termWidth_ / 2 - 10, scoreLimit.c_str());
+  mvwprintw(window_, termHeight_ - 3, termWidth_ / 2 - 10, str_high.c_str());
+  mvwprintw(window_, termHeight_ - 2, termWidth_ / 2 - 10, str_score.c_str());
+  mvwprintw(window_, termHeight_ - 1, termWidth_ / 2 - 10, scoreLimit.c_str());
+}
+
+void HelicopterGame::updateDifficulty_() {
+  int level = score_ / 100;
+  maxHoleSize_ = termHeight_ / 1.5;
+  minHoleSize_ = maxHoleSize_ / 2;
+  int deltaHole = maxHoleSize_ - minHoleSize_;
+  for (int i = 0; i < level; ++i) {
+    deltaHole -= deltaHole / 10;
+  }
+  maxHoleSize_ = minHoleSize_ + deltaHole;
+}
+
+void HelicopterGame::checkRunning() {
+  if (!running_) {
+    mvwprintw(window_, 0, termWidth_ - 38, "######################################");
+    mvwprintw(window_, 1, termWidth_ - 38, "# Your loading is done, leave with q #");
+    mvwprintw(window_, 2, termWidth_ - 38, "######################################");
+  }
 }
 
 } // namespace games

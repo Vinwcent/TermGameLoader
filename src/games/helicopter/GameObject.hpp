@@ -1,5 +1,7 @@
 #pragma once
 #include <curses.h>
+#include <vector>
+#include <string>
 
 #include "utils.hpp"
 
@@ -21,6 +23,10 @@ protected:
 class Helicopter : public GameObject {
 public:
   void printOn(WINDOW *window) override;
+private:
+  int frame = 0;
+  std::vector<std::string> backBlade_ {"\\", "|", "/", "-"};
+  std::string getBackBladesChar_();
 };
 
 
